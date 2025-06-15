@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Christian Graber - Professional Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+        #email-span, #phone-span, #resume-link {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #009688;
+        }
+        .w3-container a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <div class="w3-row-padding">
+
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        
+                        <img src="./images/Graber_-10.jpg" style="width:100%" alt="Avatar">
+
+                        <div class="w3-display-bottomleft w3-container w3-text-black">
+                            <h2><b>Christian Graber</b></h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student & Aspiring Developer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Cincinnati, OH</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><span id="email-span" onclick="showhideEmail()">Click to Show my email</span></p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><span id="phone-span" onclick="showHidePhone()">Click to Show my phone</span></p>
+                        <p><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i><span id="resume-link" onclick="showHideResumeDownload()">Click to Show Resume Download Link</span></p>
+
+                        <hr>
+
+                        <p class="w3-large"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Other Pages</b></p>
+                        <p><a href="waph.html" class="w3-text-teal">WAPH Project 1 Page</a></p>
+                        <hr>
+                        
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                        <ul>
+                            <li>C#, .NET, Java, Python</li>
+                            <li>TypeScript, JavaScript, React</li>
+                            <li>SQL, MSSQL, PostgreSQL, MongoDB</li>
+                            <li>RESTful APIs, Azure, Docker</li>
+                            <li>Agile Methodologies, Scrum</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div><br>
+
+            </div>
+
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Software Engineering Intern / MRI Software</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2024 - Aug 2024</h6>
+                        <p>Developed over 10 API endpoints in C# .NET and modernized external-facing pages, improving data access by 20% and page load speeds by 50%. Collaborated with a transcontinental Agile team to deliver high-quality software.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Software Engineering Intern / Midmark Corporation</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2023 - Dec 2023</h6>
+                        <p>Developed internal C# tools that reduced bugs by 15% and integrated Python testing to boost product quality. Optimized RESTful APIs, reducing response times by 10%.</p>
+                        <hr>
+                    </div>
+                     <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Software Engineering Intern / Midmark Corporation</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - Apr 2023</h6>
+                        <p>Developed over 5 reusable React components in TypeScript, resolving multiple front-end issues and enhancing user experience. Implemented micro front ends with Single-Spa for cross-team usage.</p>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>University of Cincinnati</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Graduating: May 2026</h6>
+                        <p>Bachelor of Science in Computer Science</p>
+                        <p>Relevant Coursework: Algorithms, Databases, Operating Systems, Software Engineering, IoT.</p><br>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function showhideEmail() {
+            var emailSpan = document.getElementById("email-span");
+            if (emailSpan.innerHTML.includes("graberenc@mail.uc.edu")) {
+                emailSpan.innerHTML = "Click to Show my email";
+            } else {
+                emailSpan.innerHTML = "grabercn@mail.uc.edu";
+            }
+        }
+
+        function showHidePhone() {
+            var phoneSpan = document.getElementById("phone-span");
+            if (phoneSpan.innerHTML.includes("(216) 469-4238")) {
+                phoneSpan.innerHTML = "Click to Show my phone";
+            } else {
+                phoneSpan.innerHTML = "(216) 469-4238";
+            }
+        }
+
+        function showHideResumeDownload() {
+            var resumeLink = document.getElementById("resume-link");
+            if (resumeLink.innerHTML.includes("Download Resume")) {
+                resumeLink.innerHTML = "Click to Show Resume Download Link";
+            } else {
+                resumeLink.innerHTML = "<a href='./files/Graber_Christian_Resume.pdf' target='_blank'>Download Resume</a>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
