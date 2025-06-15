@@ -77,7 +77,7 @@
                     <div class="w3-container w3-light-grey w3-padding-16">
                         <p class="w3-large"><b><i class="fa fa-eye fa-fw w3-margin-right w3-text-teal"></i>Page Views</b></p>
                         
-                        <a href="https://info.flagcounter.com/NcFr"><img src="https://s01.flagcounter.com/count/NcFr/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_4/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+                        <p id="page-views" class="w3-text-teal">0</p>
                     </div>  
                 </div><br>
 
@@ -150,6 +150,20 @@
                 resumeLink.innerHTML = "<a href='./files/Graber_Christian_Resume.pdf' target='_blank'>Download Resume</a>";
             }
         }
+
+        function pageViewCounter() {
+            var views = localStorage.getItem('pageViews');
+            if (views) {
+                views = parseInt(views) + 1;
+            } else {
+                views = 1;
+            }
+            localStorage.setItem('pageViews', views);
+            document.getElementById('page-views').innerText = "This page has "+views+" views.";
+        }
+        $(document).ready(function() {
+            pageViewCounter();
+        });
     </script>
 
 </body>

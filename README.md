@@ -65,7 +65,7 @@ For these requirements, I simply created a new repo on GitHub, and went into the
 
 ### **Non-technical requirements (20 pts):**
 
-I used an open source w3 schools template that primarily relies of CSS classes. This made it simple to create a dynamic and nice looking page. To target to potential employers, I made sure to include my professional work history, skills, education, a nice headshot, and my contact information. The page tracker was also added on the sidebar using the Flag tracker.
+I used an open source w3 schools template that primarily relies of CSS classes. This made it simple to create a dynamic and nice looking page. To target to potential employers, I made sure to include my professional work history, skills, education, a nice headshot, and my contact information. The page tracker was also added. For this I used a simple local storage call that will determine how many times people have seen the page. I tried using the Flag Viewer but that kept getting blocked by my AntiVirus, so I opted for this instead.
 
 ### **Technical requirements (50 pts):**
 **Basic JavaScript code (20 pts):**
