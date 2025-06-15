@@ -124,7 +124,7 @@
                         </center>
                         
                         <hr>
-                        <center><h3>Joke of the Day:</h3></center>
+                        <center><h3>Joke of the Minute:</h3></center>
                         <div id="response" class="w3-container"></div>
                         
                         <center>
@@ -237,7 +237,14 @@
             }
         );
 
-        $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+        // get a new joke every minute
+        setInterval(function() {
+            $.get("https://v2.jokeapi.dev/joke/Any?type=single",
+                function(result) {
+                    $("#response").text(result.joke);
+                });
+        }, 60000); // 60000 milliseconds = 1 minute
+        $.get("https://v2.jokeapi.dev/joke/Any?type=single",
             function(result) {
             $("#response").text( result.joke)
         });
